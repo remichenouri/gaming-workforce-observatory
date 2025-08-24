@@ -409,7 +409,7 @@ elif page == "🎯 Stratégies Rétention":
 
     with col2:
         fig = px.bar(data['retention'], x='strategy', y='effectiveness_score',
-                    title='Score d'Efficacité par Stratégie',
+                    title="Score d'Efficacité par Stratégie",
                     color='implementation_cost',
                     color_discrete_map={'High': '#e74c3c', 'Medium': '#f39c12', 'Low': '#27ae60'})
         fig.update_xaxis(tickangle=45)
