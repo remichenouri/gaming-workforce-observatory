@@ -205,7 +205,7 @@ elif page == "⚔️ Talent Wars: Gaming vs Tech":
         fig = px.bar(avg_gap, x='role', y='gap_percentage',
                     title='Écart Salarial Moyen par Rôle (%)',
                     color_discrete_sequence=['#ff9f43'])
-        fig.update_xaxis(tickangle=45)
+        fig.update_xaxes(tickangle=45)
         st.plotly_chart(fig, use_container_width=True)
 
     # Tableau détaillé
@@ -258,7 +258,7 @@ elif page == "🌍 Studios Globaux":
         fig = px.bar(country_analysis, x='country', y='avg_salary_usd',
                     title='Salaire Moyen par Pays',
                     color_discrete_sequence=['#ff6b6b'])
-        fig.update_xaxis(tickangle=45)
+        fig.update_xaxes(tickangle=45)
         st.plotly_chart(fig, use_container_width=True)
 
 elif page == "🧠 Neurodiversité & ROI":
@@ -288,7 +288,7 @@ elif page == "🧠 Neurodiversité & ROI":
         fig = px.bar(data['neurodiversity'], x='metric', y='roi_percentage',
                     title='ROI par Métrique (%)', color=colors,
                     color_discrete_map={'green': '#27ae60', 'red': '#e74c3c'})
-        fig.update_xaxis(tickangle=45)
+        fig.update_xaxes(tickangle=45)
         st.plotly_chart(fig, use_container_width=True)
 
     with col2:
@@ -313,7 +313,7 @@ elif page == "🧠 Neurodiversité & ROI":
 
         fig.update_layout(
             polar=dict(
-                radialaxis=dict(
+                radialaxes=dict(
                     visible=True,
                     range=[0, 150]
                 )),
@@ -382,7 +382,7 @@ elif page == "💰 Analyse Compensation":
         fig = px.box(data['salaries'], x='role', y='gaming_salary_usd',
                     title='Distribution Salaires Gaming',
                     color_discrete_sequence=['#667eea'])
-        fig.update_xaxis(tickangle=45)
+        fig.update_xaxes(tickangle=45)
         st.plotly_chart(fig, use_container_width=True)
 
     with col2:
@@ -390,7 +390,7 @@ elif page == "💰 Analyse Compensation":
         fig = px.bar(avg_by_role, x='role', y='gaming_salary_usd',
                     title='Salaire Moyen par Rôle',
                     color_discrete_sequence=['#764ba2'])
-        fig.update_xaxis(tickangle=45)
+        fig.update_xaxes(tickangle=45)
         st.plotly_chart(fig, use_container_width=True)
 
 elif page == "🎯 Stratégies Rétention":
@@ -412,7 +412,7 @@ elif page == "🎯 Stratégies Rétention":
                     title="Score d'Efficacité par Stratégie",
                     color='implementation_cost',
                     color_discrete_map={'High': '#e74c3c', 'Medium': '#f39c12', 'Low': '#27ae60'})
-        fig.update_xaxis(tickangle=45)
+        fig.update_xaxes(tickangle=45)
         st.plotly_chart(fig, use_container_width=True)
 
     # Analyse coût-bénéfice
