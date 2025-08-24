@@ -313,7 +313,7 @@ elif page == "🧠 Neurodiversité & ROI":
 
         fig.update_layout(
             polar=dict(
-                radialaxes=dict(
+                radialaxis=dict(
                     visible=True,
                     range=[0, 150]
                 )),
