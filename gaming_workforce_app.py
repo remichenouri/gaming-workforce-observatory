@@ -234,7 +234,7 @@ elif page == "🌍 Studios Globaux":
     with col2:
         top_studios = data['studios'].nlargest(8, 'employees')
         fig = px.bar(top_studios, x='employees', y='studio_name',
-                    title='Top Studios par Nombre d'Employés',
+                    title="Top Studios par Nombre d'Employés",
                     orientation='h', color_discrete_sequence=['#667eea'])
         st.plotly_chart(fig, use_container_width=True)
 
