@@ -1,0 +1,16 @@
+{
+  "wellness_metrics": {
+    "total_employees": 112500,
+    "average_salary": 98750,
+    "retention_rate": 82.5,
+    "studios_analyzed": 10,
+    "gaming_vs_tech_gap": -15,
+    "neurodiversity_roi": 25.3,
+    "top_retention_strategy": "Work-Life Balance"
+  },
+  "industry_evolution": {
+    "revenue_growth": 25.7,
+    "salary_growth": 30.5,
+    "layoffs_2023": 10500
+  }
+}
