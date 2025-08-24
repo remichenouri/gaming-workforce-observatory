@@ -1,0 +1,31 @@
+[theme]
+# Couleurs Gaming Professionnelles
+primaryColor = "#667eea"           # Bleu gaming principal
+backgroundColor = "#ffffff"        # Fond blanc propre
+secondaryBackgroundColor = "#f8f9ff"  # Fond secondaire léger
+textColor = "#262730"             # Texte sombre lisible
+
+[server]
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+serverAddress = "0.0.0.0"
+
+[client]
+caching = true
+displayEnabled = true
+
+[runner]
+magicEnabled = true
+installTracer = false
+fixMatplotlib = true
+
+[logger]
+level = "info"
+
+[deprecation]
+showPyplotGlobalUse = false
