@@ -192,7 +192,7 @@ elif page == "⚔️ Talent Wars: Gaming vs Tech":
 
     with col1:
         fig = px.bar(salary_comparison, x='experience_level', y=['gaming_salary_usd', 'tech_salary_usd'],
-                    title='Comparaison Salaires par Niveau d'Expérience',
+                    title="Comparaison Salaires par Niveau d'Expérience",
                     barmode='group', color_discrete_sequence=['#ff6b6b', '#4ecdc4'])
         st.plotly_chart(fig, use_container_width=True)
 
